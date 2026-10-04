@@ -109,6 +109,165 @@
 .routes-section .btn { display: table; margin: 0 auto; }
 @media (max-width: 520px) { .routes-section { padding: 46px 15px; } .routes-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; } .route-card { min-height: 112px; padding: 12px 8px; } }
 
+
+    .card-call { display: inline-block; margin-top: 12px; background: var(--red); color: white; padding: 9px 13px; border-radius: 8px; text-decoration: none; font-weight: 800; }
+    .card-call:hover { filter: brightness(.92); }
+
+    .why-section { background: #eef3f9; padding: clamp(42px, 6vw, 76px) clamp(16px, 4vw, 44px); }
+    .why-grid { max-width: 1180px; margin: 30px auto 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 18px; }
+    .why-card { background: #fff; border: 1px solid #e4eaf2; border-radius: 14px; padding: 22px; box-shadow: 0 7px 24px #1b2a4710; }
+    .why-icon { font-size: 1.8rem; margin-bottom: 10px; }
+    .why-card h3 { color: var(--navy); margin-bottom: 7px; }
+    .why-card p { color: #667085; font-size: .95rem; }
+    .quick-section { background: #fff; padding: clamp(42px, 6vw, 76px) clamp(16px, 4vw, 44px); }
+    .quick-grid { max-width: 1050px; margin: 30px auto 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+    .quick-card { border: 1px solid #e5eaf1; border-radius: 14px; padding: 20px; background: #f9fbfd; }
+    .quick-card h3 { color: var(--navy); margin-bottom: 7px; }
+    .quick-card p { color: #667085; min-height: 52px; font-size: .94rem; }
+    .quick-card a { display: inline-flex; margin-top: 13px; background: var(--red); color: #fff; text-decoration: none; font-weight: 800; padding: 9px 13px; border-radius: 8px; }
+    .quick-card a:hover { background: var(--dark-red); }
+    .info-banner { max-width: 1050px; margin: 28px auto 0; padding: 16px 18px; border-left: 5px solid var(--gold); border-radius: 10px; background: #fff9e8; color: #5f4d1d; }
+
+
+/* Attractive upgraded theme */
+:root{
+  --red:#e31b23;
+  --dark-red:#b51219;
+  --navy:#102a56;
+  --navy-2:#163d78;
+  --blue:#2f6fed;
+  --light:#f5f8ff;
+  --white:#ffffff;
+  --gold:#ffca28;
+  --green:#25d366;
+  --ink:#1d2a3b;
+  --muted:#65748b;
+  --soft-red:#fff1f2;
+  --soft-blue:#edf4ff;
+}
+
+body{
+  color:var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(47,111,237,.07), transparent 32%),
+    linear-gradient(180deg,#ffffff 0%,#f6f9ff 55%,#eef4ff 100%);
+}
+
+header{
+  background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 55%,#1f5ba8 100%) !important;
+}
+
+.logo, header .logo, .site-title{
+  text-shadow:0 2px 14px rgba(255,255,255,.12);
+}
+
+.btn-primary, .call-btn, .cta-btn{
+  background:linear-gradient(135deg,var(--red),#ff4b52) !important;
+  border-color:transparent !important;
+  box-shadow:0 10px 24px rgba(227,27,35,.24);
+}
+.btn-primary:hover, .call-btn:hover, .cta-btn:hover{
+  background:linear-gradient(135deg,#c9141b,#ef343c) !important;
+  transform:translateY(-2px);
+}
+
+.btn-secondary{
+  background:linear-gradient(135deg,var(--navy),var(--blue)) !important;
+  color:#fff !important;
+  border-color:transparent !important;
+  box-shadow:0 10px 22px rgba(16,42,86,.18);
+}
+
+section{
+  position:relative;
+}
+
+section:nth-of-type(even){
+  background:linear-gradient(180deg,#ffffff 0%,#f6f9ff 100%);
+}
+
+.card, .service-card, .route-card, .feature-card, .contact-card, .faq-item{
+  border:1px solid rgba(22,61,120,.10);
+  box-shadow:0 12px 30px rgba(16,42,86,.08);
+  transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+
+.card:hover, .service-card:hover, .route-card:hover, .feature-card:hover, .contact-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 18px 38px rgba(16,42,86,.14);
+  border-color:rgba(227,27,35,.24);
+}
+
+.section-heading h2, h2{
+  color:var(--navy);
+}
+
+.eyebrow{
+  color:var(--red) !important;
+}
+
+.hero{
+  background:
+    linear-gradient(135deg,rgba(16,42,86,.95),rgba(31,91,168,.88)),
+    linear-gradient(90deg,#102a56,#1f5ba8) !important;
+}
+
+.hero h1{
+  text-shadow:0 4px 20px rgba(0,0,0,.22);
+}
+
+.route-card{
+  background:linear-gradient(180deg,#fff 0%,#f7fbff 100%);
+}
+
+.route-card b{
+  color:var(--red) !important;
+}
+
+.service-card .icon, .service-icon{
+  background:linear-gradient(135deg,var(--red),var(--blue)) !important;
+  color:#fff !important;
+  box-shadow:0 8px 18px rgba(47,111,237,.18);
+}
+
+.badge, .tag{
+  background:linear-gradient(135deg,#ffe082,var(--gold)) !important;
+  color:#543f00 !important;
+}
+
+.notice, .routes-note{
+  background:var(--soft-blue);
+  border-left:4px solid var(--blue);
+  padding:12px 16px;
+  border-radius:10px;
+}
+
+footer{
+  background:linear-gradient(135deg,#0b1f42,#163d78) !important;
+}
+
+footer a:hover{
+  color:var(--gold) !important;
+}
+
+.floating-whatsapp{
+  box-shadow:0 10px 24px rgba(37,211,102,.30) !important;
+}
+
+img{
+  border-radius:14px;
+}
+
+@media (max-width:700px){
+  header{
+    padding:12px 14px !important;
+  }
+  .btn-primary, .btn-secondary, .call-btn, .cta-btn{
+    width:100%;
+    text-align:center;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -137,14 +296,17 @@
     <a href="#booking-steps">How to Book</a>
     <a href="#faq">FAQs</a>
     <a href="#contact">Contact</a>
-  </nav>
+      <a href="#routes">Routes</a>
+    <a href="#why-us">Why Us</a>
+    <a href="#quick-request">Quick Request</a>
+</nav>
   <div class="emergency-bar">🚨 Emergency Ambulance Support — Call or WhatsApp to Check Availability</div>
 
   <main>
     <section class="hero">
       <span class="eyebrow">Care • Safety • Quick Response</span>
       <h2>RK Lifeline Ambulance Service</h2>
-      <p>Emergency ambulance and patient transportation support. Contact our team by phone or WhatsApp for assistance.</p>
+      <p>Emergency ambulance, patient transportation, stretcher, mortuary freezer box and Antim Sanskar support. Contact our team by phone or WhatsApp for assistance.</p>
       <div class="hero-actions">
         <a href="tel:9696433883" class="hero-call-now">☎ Call Now: 9696433883</a>
         <a href="https://wa.me/919696433883?text=Namaste%2C%20mujhe%20ambulance%20service%20chahiye." class="hero-whatsapp" target="_blank" rel="noopener noreferrer">
@@ -188,10 +350,45 @@
           <div class="card-img-wrap"><img src="orange-hospital-stretcher-on-transparent-background-png.png" alt="Hospital patient stretcher" class="card-img" onerror="this.onerror=null; this.src='orange-hospital-stretcher-on-transparent-background-png';"></div>
           <div class="card-content"><h3>Stretcher & Patient Support</h3><p>Patient movement and stretcher support. Contact us to discuss your transport requirements.</p></div>
         </article>
+        <article class="card">
+          <div class="card-img-wrap"><img src="mortuary-freezer-box.jpg" alt="Mortuary freezer box for respectful body preservation support" class="card-img"></div>
+          <div class="card-content"><h3>Mortuary Freezer Box</h3><p>Temperature-controlled mortuary freezer box support for respectful body preservation. Call 9696433883 to confirm availability and requirements.</p></div>
+        </article>
+        <article class="card">
+          <div class="card-img-wrap"><img src="mortuary-freezer-box.jpg" alt="Antim sanskar ke liye respectful body transport support" class="card-img"></div>
+          <div class="card-content"><h3>Antim Sanskar Support</h3><p>Antim sanskar ke samay parthiv sharir ke respectful transportation aur zaroori service coordination ke baare mein jaankari ke liye call karein. Availability aur requirements pehle confirm karein.</p><a class="card-call" href="tel:9696433883">Call Now: 9696433883</a></div>
+        </article>
       </div>
     </section>
 
-    <section class="services" id="booking-steps">
+    
+    <section class="why-section" id="why-us">
+      <h2 class="section-title">Why Choose RK Lifeline Ambulance Service?</h2>
+      <p class="section-intro">Patient aur family needs ko dhyan mein rakhkar ambulance booking ko simple banane ke liye important support options.</p>
+      <div class="why-grid">
+        <article class="why-card"><div class="why-icon">📞</div><h3>Direct Call Support</h3><p>Ek hi number par ambulance requirement aur route ki basic details share karke availability confirm karein.</p></article>
+        <article class="why-card"><div class="why-icon">💬</div><h3>WhatsApp Request</h3><p>Pickup, destination aur service requirement WhatsApp par bhejkar inquiry kar sakte hain.</p></article>
+        <article class="why-card"><div class="why-icon">🚑</div><h3>Multiple Vehicle Options</h3><p>Available ambulance type, stretcher support aur patient transport options ke baare mein booking se pehle poochhein.</p></article>
+        <article class="why-card"><div class="why-icon">🛣️</div><h3>Delhi-Origin Routes</h3><p>Delhi se Uttarakhand, Bihar, West Bengal aur anya listed destinations ke intercity route options.</p></article>
+        <article class="why-card"><div class="why-icon">🛏️</div><h3>Patient & Stretcher Support</h3><p>Patient transfer ke liye stretcher aur suitable transport requirement ko pehle confirm karein.</p></article>
+        <article class="why-card"><div class="why-icon">🤝</div><h3>Family Assistance</h3><p>Urgent situation mein booking se pehle required service, destination aur charges ko clear karne mein help.</p></article>
+      </div>
+      <div class="info-banner"><strong>Important:</strong> Har trip ki vehicle availability, medical equipment, staff, response time aur charges pehle phone par confirm karein.</div>
+    </section>
+
+    <section class="quick-section" id="quick-request">
+      <h2 class="section-title">Quick Service Request</h2>
+      <p class="section-intro">Neeche apni requirement ke hisaab se WhatsApp message kholkar details bhej sakte hain.</p>
+      <div class="quick-grid">
+        <article class="quick-card"><h3>🚑 Ambulance Booking</h3><p>Nearby ya urgent patient transport ke liye inquiry bhejein.</p><a target="_blank" rel="noopener noreferrer" href="https://wa.me/919696433883?text=Namaste%2C%20mujhe%20ambulance%20booking%20ki%20zarurat%20hai.%20Pickup%3A%20%20Destination%3A">WhatsApp Request</a></article>
+        <article class="quick-card"><h3>🛏️ Stretcher Support</h3><p>Stretcher/patient assistance ki requirement ke liye message karein.</p><a target="_blank" rel="noopener noreferrer" href="https://wa.me/919696433883?text=Namaste%2C%20mujhe%20stretcher%20support%20ki%20zarurat%20hai.%20Pickup%3A%20%20Destination%3A">WhatsApp Request</a></article>
+        <article class="quick-card"><h3>❄️ Mortuary Freezer Box</h3><p>Availability aur requirements confirm karne ke liye inquiry bhejein.</p><a target="_blank" rel="noopener noreferrer" href="https://wa.me/919696433883?text=Namaste%2C%20mujhe%20mortuary%20freezer%20box%20service%20ke%20baare%20mein%20jaankari%20chahiye.">WhatsApp Request</a></article>
+        <article class="quick-card"><h3>🕊️ Antim Sanskar Support</h3><p>Respectful transportation aur coordination support ke liye details poochhein.</p><a target="_blank" rel="noopener noreferrer" href="https://wa.me/919696433883?text=Namaste%2C%20mujhe%20Antim%20Sanskar%20Support%20ke%20baare%20mein%20jaankari%20chahiye.%20Pickup%3A%20%20Destination%3A">WhatsApp Request</a></article>
+        <article class="quick-card"><h3>🛣️ Intercity Route</h3><p>Delhi se kisi listed state/destination tak ambulance route inquiry ke liye.</p><a target="_blank" rel="noopener noreferrer" href="https://wa.me/919696433883?text=Namaste%2C%20mujhe%20Delhi%20se%20intercity%20ambulance%20route%20chahiye.%20Destination%3A">WhatsApp Request</a></article>
+      </div>
+    </section>
+
+<section class="services" id="booking-steps">
       <h2 class="section-title">How to Contact Us</h2>
       <p class="section-intro">A simple way to ask about ambulance transport. In an emergency, contact local emergency services too.</p>
       <div class="steps">
@@ -209,38 +406,7 @@
       </div>
     </section>
 
-    <section class="services" id="faq">
-      <h2 class="section-title">Frequently Asked Questions</h2>
-      <div class="faq-list">
-        <details><summary>How do I contact RK Lifeline Ambulance Service?</summary><p>Call 9696433883 or use one of the WhatsApp buttons on this page.</p></details>
-        <details><summary>Can I ask about the ambulance type before booking?</summary><p>Yes. Contact the team to ask which vehicle is available and whether it suits your transport needs.</p></details>
-        <details><summary>Are the service and charges available 24/7?</summary><p>Please confirm current availability, operating hours, and charges directly with the service before relying on them.</p></details>
-        <details><summary>What information should I share?</summary><p>Share the pickup location, destination, contact number, and relevant patient transport requirements. Avoid posting private medical details publicly.</p></details>
-      </div>
-    </section>
-
-    <section class="contact-strip" id="contact">
-      <h2>Need an Ambulance?</h2>
-      <p>Call us directly or send a WhatsApp message to discuss your requirement.</p>
-      <div class="contact-actions">
-        <a href="tel:9696433883" class="call-btn">☎ Call: 9696433883</a>
-        <a href="https://wa.me/919696433883?text=Namaste%2C%20mujhe%20ambulance%20service%20chahiye." class="wa-btn" target="_blank" rel="noopener noreferrer">WhatsApp: 9696433883</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p><strong>RK Lifeline Ambulance Service</strong></p>
-    <p>Call: 9696433883 &nbsp;|&nbsp; WhatsApp: 9696433883</p>
-    <p>© 2026 RK Lifeline Ambulance Service. All Rights Reserved.</p>
-  </footer>
-
-  <a class="floating-whatsapp" href="https://wa.me/919696433883?text=Namaste%2C%20mujhe%20ambulance%20service%20chahiye." target="_blank" rel="noopener noreferrer" aria-label="Chat with RK Lifeline Ambulance Service on WhatsApp">
-    <span>WhatsApp करें</span>
-    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 .8A15.1 15.1 0 0 0 3.05 23.67L1 31l7.52-1.97A15.2 15.2 0 1 0 16 .8Zm0 27.55a12.4 12.4 0 0 1-6.32-1.73l-.45-.27-4.46 1.17 1.19-4.35-.29-.47A12.42 12.42 0 1 1 16 28.35Zm6.82-9.3c-.37-.19-2.19-1.08-2.53-1.2-.34-.13-.59-.19-.84.19-.25.37-.96 1.2-1.18 1.45-.22.25-.44.28-.81.09-.37-.19-1.56-.58-2.98-1.84-1.1-.98-1.84-2.19-2.06-2.56-.22-.37-.02-.57.17-.76.17-.17.37-.44.56-.66.19-.22.25-.37.37-.62.13-.25.06-.47-.03-.66-.09-.19-.84-2.02-1.15-2.76-.3-.72-.61-.62-.84-.63h-.72c-.25 0-.66.09-1 .47-.34.37-1.31 1.28-1.31 3.11s1.34 3.61 1.53 3.86c.19.25 2.64 4.03 6.39 5.65.89.38 1.59.61 2.13.78.9.29 1.72.25 2.37.15.72-.11 2.19-.9 2.5-1.78.31-.88.31-1.63.22-1.78-.09-.16-.34-.25-.72-.44Z"/></svg>
-  </a>
-
-<section id="routes" class="section routes-section">
+    <section id="routes" class="section routes-section">
   <div class="container">
     <div class="section-heading">
       <p class="eyebrow">Intercity Ambulance Service</p>
@@ -288,5 +454,40 @@
     <a class="btn btn-primary" href="tel:9696433883">Call Now: 9696433883</a>
   </div>
 </section>
-\n</body>
+
+<section class="services" id="faq">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <details><summary>How do I contact RK Lifeline Ambulance Service?</summary><p>Call 9696433883 or use one of the WhatsApp buttons on this page.</p></details>
+        <details><summary>Can I ask about the ambulance type before booking?</summary><p>Yes. Contact the team to ask which vehicle is available and whether it suits your transport needs.</p></details>
+        <details><summary>Are the service and charges available 24/7?</summary><p>Please confirm current availability, operating hours, and charges directly with the service before relying on them.</p></details>
+        <details><summary>Antim Sanskar ke liye kya support mil sakta hai?</summary><p>Parthiv sharir ke respectful transportation aur available service coordination ke baare mein 9696433883 par call karke jaankari le sakte hain. Har requirement aur availability booking se pehle confirm karein.</p></details>
+        <details><summary>What information should I share?</summary><p>Share the pickup location, destination, contact number, and relevant patient transport requirements. Avoid posting private medical details publicly.</p></details>
+      </div>
+    </section>
+
+    <section class="contact-strip" id="contact">
+      <h2>Need an Ambulance?</h2>
+      <p>Call us directly or send a WhatsApp message to discuss your requirement.</p>
+      <div class="contact-actions">
+        <a href="tel:9696433883" class="call-btn">☎ Call: 9696433883</a>
+        <a href="https://wa.me/919696433883?text=Namaste%2C%20mujhe%20ambulance%20service%20chahiye." class="wa-btn" target="_blank" rel="noopener noreferrer">WhatsApp: 9696433883</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>RK Lifeline Ambulance Service</strong></p>
+    <p>Call: 9696433883 &nbsp;|&nbsp; WhatsApp: 9696433883</p>
+    <p>© 2026 RK Lifeline Ambulance Service. All Rights Reserved.</p>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/919696433883?text=Namaste%2C%20mujhe%20ambulance%20service%20chahiye." target="_blank" rel="noopener noreferrer" aria-label="Chat with RK Lifeline Ambulance Service on WhatsApp">
+    <span>WhatsApp करें</span>
+    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 .8A15.1 15.1 0 0 0 3.05 23.67L1 31l7.52-1.97A15.2 15.2 0 1 0 16 .8Zm0 27.55a12.4 12.4 0 0 1-6.32-1.73l-.45-.27-4.46 1.17 1.19-4.35-.29-.47A12.42 12.42 0 1 1 16 28.35Zm6.82-9.3c-.37-.19-2.19-1.08-2.53-1.2-.34-.13-.59-.19-.84.19-.25.37-.96 1.2-1.18 1.45-.22.25-.44.28-.81.09-.37-.19-1.56-.58-2.98-1.84-1.1-.98-1.84-2.19-2.06-2.56-.22-.37-.02-.57.17-.76.17-.17.37-.44.56-.66.19-.22.25-.37.37-.62.13-.25.06-.47-.03-.66-.09-.19-.84-2.02-1.15-2.76-.3-.72-.61-.62-.84-.63h-.72c-.25 0-.66.09-1 .47-.34.37-1.31 1.28-1.31 3.11s1.34 3.61 1.53 3.86c.19.25 2.64 4.03 6.39 5.65.89.38 1.59.61 2.13.78.9.29 1.72.25 2.37.15.72-.11 2.19-.9 2.5-1.78.31-.88.31-1.63.22-1.78-.09-.16-.34-.25-.72-.44Z"/></svg>
+  </a>
+
+
+\n
+</body>
 </html>
